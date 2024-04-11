@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+}
+.navbar{
+    background-color: white;
+    margin-top: 17px;
+    height: 45px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 12px;
+    justify-content: center;
+}
+.navbar ul li{
+    
+    padding: 0px 45px;
+}
+.navbar ul li a{
+    color: black;
+    text-decoration: none ;
+}
+.navbar ul li a:hover{
+    color: rgb(158, 216, 197);
+}
+#searchIcon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#searchForm{
+    padding-left: 88px;
+}
+#page1{
+    background-image: url(../images/aboutUs\ bg1.png);
+    filter: brightness(60%);
+    height: 622px;
+    background-repeat: no-repeat ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    height: 550px;
+}
+.text{
+    text-align: center;
+    color: white;
+    z-index: 1;
+    
+}
+h1{
+    font-size: 3rem;
+
+}
+#page2{
+    background-image: url(../images/aboutUsBg2.png);
+    filter: brightness(60%);
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+#Common{
+    background-color:#072D16;
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    flex: 1;
+    
+    color: white    
+}
+#second ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}
+#second ul li{
+    list-style-type: none;
+    padding: 4px 0;;
+}
+#nav{
+    
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+}
+#third input,textarea{
+    background-color: #072D16;
+    border-bottom: 1px solid white;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin: 20px 0;
+    color: white
+}
+#heading{
+    display: flex;
+}
+.result-container ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.result-container ul li a{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.result-container ul li{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center ;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+#myUL{
+    height: 328px;
+}
+.result-container{
+    height: 120px;
+    overflow: hidden;
+}

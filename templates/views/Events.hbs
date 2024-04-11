@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li style="justify-content: center;">
+                    <img style="height: 30px;" src="images/logo_new.png" alt="">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/AboutUs">About Us</a></li>
+                <li><a href="/DailyUpdates">Updates</a></li>
+                <li><a href="/Events">Events</a></li>
+                <li><img id="searchIcon" src="images/search_icon-removebg-preview.png" alt="search" class="icon" style="display: none;"></li>
+                <li id="searchForm" style="display: none;">
+                    <form >
+                        <input type="text" id="searchInput" placeholder="What are you looking for" required >
+                        <input type="button" id="searchButton" value="Search" onclick="performSearch()" style="background-color: black; color: white;
+                        cursor: pointer;">
+                    </form></li>
+            </ul>
+        </div>
+        
+    </header>
+    <div id="content">
+        <h1>Explore Environment Events</h1>
+    </div>
+    <div class="boxes">
+        <a href="https://10times.com/waste-management/tradeshows"><div class="box" id="box1">
+            <h2>Environment fair</h2>
+        </div></a>
+        <a href="https://www.parvaah.org/our-campaigns/tree-plantation-drive.html"><div class="box" id="box2">
+            <h2>Plantation Drive</h2>
+        </div></a>
+        <a href="https://www.plt.org/educator-tips/top-ten-benefits-environmental-education/"><div class="box" id="box3">
+            <h2>Environment Education</h2>
+        </div></a>
+
+    </div>
+    <div class="calender">
+        <h1>Upcoming Events</h1>
+        <div class="row">
+            <div class="row1" id="box_11">
+                <p>World Wide Life Day</p>
+                <h3>3rd March</h3>
+            </div>
+            <div class="row1" id="box_12">
+                <p>Global Recycling Day</p>
+                <h3 style="margin-top: 0px;">18th March</h3>
+            </div>
+            <div class="row1" id="box_13">
+                <p>World Water Day</p>
+                <h3>22nd March</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row2" id="box_21">
+                <p>Aquatic Animal Day</p>
+                <h3>3rd April</h3>
+            </div>
+            <div class="row2" id="box_22">
+                <p>Arbor Day</p>
+                <h3>8th April</h3>
+            </div>
+            <div class="row2" id="box_23">
+                <p>Earth Day</p>
+                <h3>22nd April</h3>
+            </div>
+        </div>
+        <a id="shortcut" href="/calender" style="color: blue;">Explore Calender </a>
+    </div>
+    <div id="Common" >
+        <div class="boxesCommon" id="first">
+            <div id="heading">
+            <h2>EcoWise</h2>
+            <img src="images/logo.png" alt="">
+        </div>
+            <p>Thank you for your interest and our commitment to a sustainable future. We welcome your inquiries, feedback, and collaboration opportunities.</p>
+        </div>
+        <div class="boxesCommon" id="second">
+            <div id="nav" >
+            <h2 style="padding-left: 22px;">Company</h2>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/AboutUs">About Us</a></li>
+                <li><a href="/DailyUpdates">Updates</a></li>
+                <li><a href="/Events">Events</a></li>
+                <li><a href="/Ngo">NGO</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="boxesCommon" id="third" >
+            <h2>Contact Us</h2>
+            <form id="form" action="" method="post">
+                
+                <input type="text" id="name" name="name" placeholder="Name" required>
+    
+                <input type="email" id="email" name="email" placeholder="Email" required style="margin-left: 10px;">
+        
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <div>
+                <textarea id="notes" name="notes" placeholder="Notes " rows="1" style="resize: none;"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                
+            </form>
+        </div>      
+
+    </div>
+    
+    </div>
+</body>
+</html>
