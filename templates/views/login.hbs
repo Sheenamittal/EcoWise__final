@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="main-div">
+            <h1 id="heading">Login</h1>
+            <form action="/login" method="POST">
+                <div id="form-container">
+                    <h3 class="sub-head">Email</h3>
+                    <input type="text" id="detail-input" placeholder="abc@gmail.com" name="email">
+                    <h3 class="sub-head">Password</h3>
+                    <input type="text" id="detail-input" placeholder="Password" name="password">
+                    <div id="checkbox-container">
+                        <div>
+                            <input type="checkbox">Remember Me
+                        </div>
+                        <div id="forgot-password">Forgot Password?</div>
+                    </div>
+                    {{!-- <button class="login-signup">Login</button> --}}
+                    <input type="submit" class="login-signup" value="Login">
+                    <a href="/signup" style="text-decoration: none;">
+                        {{!-- <button class="login-signup">Signup</button> --}}
+                        <div class="login-signup ">Signup</div> 
+                        {{!-- <input type="submit" class="login-signup" value="SignUp"> --}}
+                    </a>
+
+            </form>
+
+            <!-- <div class="login-signup">Login</div> -->
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

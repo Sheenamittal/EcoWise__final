@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/AboutUs.css">
+    <link rel="stylesheet" href="/css/common.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li style="justify-content: center;">
+                    <img style="height: 30px;" src="images/logo_new.png" alt="">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/AboutUs">About Us</a></li>
+                <li><a href="/DailyUpdates">Updates</a></li>
+                <li><a href="/Events">Events</a></li>
+                <li><img id="searchIcon" src="images/search_icon-removebg-preview.png" alt="search" class="icon" style="display: none;"></li>
+                <li id="searchForm" style="display: none;">
+                    <form >
+                        <input type="text" id="searchInput" placeholder="What are you looking for" required >
+                        <input type="button" id="searchButton" value="Search" onclick="performSearch()" style="background-color: black; color: white;
+                        cursor: pointer;">
+                    </form></li>
+            </ul>
+        </div>
+        
+    </header>
+    <div id="content">
+        <div id="page1">
+            <h1 class="text">About Us</h1>
+            <p class="text" style="width: 800px; padding-bottom: 100px;">Welcome to EcoWise - a beacon of sustainability and a catalyst for positive change.
+                 Our journey began with a shared vision: to create a world where environmental consciousness and innovation thrive hand in hand.
+                 Our team is fueled by an unwavering passion for environmental stewardship. 
+                 We believe that every small effort counts, and together, we can make a significant impact.
+                 We invite you to join us in this exciting journey towards a more sustainable and eco-conscious world.
+                </div>
+
+    </div>
+        <div id="page2">
+            <h1 class="text" style="margin-bottom: 90;">Our mission and vision</h1>
+            <p class="text" style="width: 900px;">Our mission is to pioneer sustainable solutions that empower individuals and businesses to embrace eco-friendly practices. 
+                We are committed to reducing environmental impact, promoting biodiversity, and fostering a global community dedicated to responsible living.
+                 Through innovation, education, and collaboration, we strive to leave a positive legacy for future generations.
+                 Our vision is to create a world where sustainability is ingrained in every aspect of life.
+                  We aspire to be a driving force behind a global shift towards green living, where communities thrive in harmony with nature. 
+                 By leveraging technology, fostering partnerships, and inspiring change, we envision a future where environmental stewardship is a shared responsibility, and our planet flourishes for centuries to come.
+                </p>
+
+            </div >
+            <div id="Common" >
+            <div class="box" id="first">
+                <div id="heading">
+                <h2>EcoWise</h2>
+                <img src="images/logo.png" alt="">
+            </div>
+                <p>Thank you for your interest and our commitment to a sustainable future. We welcome your inquiries, feedback, and collaboration opportunities.</p>
+            </div>
+            <div class="box" id="second">
+                <div id="nav" style="padding-left: 64px;">
+                <h2 style="padding-left: 22px;">Company</h2>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/AboutUs">About Us</a></li>
+                    <li><a href="/DailyUpdates">Updates</a></li>
+                    <li><a href="/Events">Events</a></li>
+                    <li><a href="/Ngo">NGO</a></li>
+                   
+                </ul>
+            </div>
+            </div>
+
+            <div class="box" id="third" >
+                <h2 style="padding-right: 245px">Contact Us</h2>
+                <form id="form" action="" method="post">
+                    
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+        
+                    <input type="email" id="email" name="email" placeholder="Email" required style="margin-left: 10px;">
+            
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <div>
+                    <textarea id="notes" name="notes" placeholder="Notes " rows="1" style="resize: none;"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                    
+                </form>
+            </div>      
+
+        </div>
+        
+        </div>
+    <script>
+        document.getElementById("searchIcon").addEventListener("click", iconClickHandler);
+        let icon=document.getElementById("searchIcon")
+        let form = document.getElementById("searchForm");
+        function iconClickHandler() {
+            form.style.display="block";
+            icon.style.display="none";
+        
+    }
+    </script>
+</body>
+</html>

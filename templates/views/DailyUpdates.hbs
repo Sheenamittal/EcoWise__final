@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Updates</title>
+    <link rel="stylesheet" href="/css/DailyUpdates.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li style="justify-content: center;">
+                    <img style="height: 30px;" src="images/logo_new.png" alt="">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/AboutUs">About Us</a></li>
+                    <li><a href="/DailyUpdates">Updates</a></li>
+                    <li><a href="/Events">Events</a></li>
+                <li><img id="searchIcon" src="images/search_icon-removebg-preview.png" alt="search" class="icon" style="display: none;"></li>
+                <li id="searchForm" style="display: none;">
+                    <form >
+                        <input type="text" id="searchInput" spellcheck="false" placeholder="What are you looking for" required onkeyup="content()" >
+                        <input type="button" id="searchButton" value="Search"  style="background-color: black; color: white;
+                        cursor: pointer;">
+                    </form>
+                    <div class="icon">
+                        <div class="result-container" >
+                            
+                                <ul id="myUL">
+                                    <li><a href="https://en.wikipedia.org/wiki/Sustainable_development">Sustainable Development</a></li>
+                                    <li><a href="https://www.energy.gov/eere/renewable-energy#:~:text=Renewable%20energy%20is%20energy%20produced,heating%20and%20cooling%2C%20and%20transportation.">Renewable Energy</a></li>
+                                    <li><a href="https://education.nationalgeographic.org/resource/fossil-fuels/">Fossil fuels</a></li>
+                                    <li><a href="https://education.nationalgeographic.org/resource/pollution/">Pollution</a></li>
+                                    <li><a href="https://www.pca.state.mn.us/news-and-stories/what-you-can-do-about-air-pollution">Various measures to reduce pollution</a></li>
+                                    <li><a href="https://www.worldwildlife.org/pages/what-is-biodiversity#:~:text=Biodiversity%20is%20all%20the%20different,maintain%20balance%20and%20support%20life.">Biodiversity</a></li>
+                                    <li><a href="https://education.nationalgeographic.org/resource/wildlife-conservation/">Wildlife conservation</a></li>
+                                    <li><a href="https://www.un.org/en/climatechange/what-is-climate-change">Climate Change</a></li>
+                                    <li><a href="https://education.nationalgeographic.org/resource/global-warming/">Global Warming</a></li>
+                                    <li><a href="https://www.energy.gov/eere/energy-efficiency-buildings-and-industry#:~:text=Energy%20efficiency%20is%20the%20use,less%20energy%20to%20produce%20goods.">Energy Efficiency</a></li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>    
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div  id="box1">
+                <img id="blogs" style="border-radius: 15px; margin-left: 111px;"src="images/blogs.png" alt="" >
+            </div>
+            <div id="inner-container">
+                <div class="box1">
+                    <img src="images/windmill_img.avif" alt="" class="windmill" style="margin-top: 10px;">
+                    <h2>10 Effective ways for sustainability</h2>
+                    <button class="read-more"onclick="sustainability()"style="cursor: pointer;">Read More</button>
+                </div>
+                <div class="box1">
+                    <img src="images/windmill_img.avif" alt="" class="windmill"style="margin-top: 10px;">
+                    <h2>Carbon FootPrints</h2>
+                    <button class="read-more" onclick="carbon()"style="cursor: pointer;">Read More</button>
+                </div>
+                <div class="box1" >
+                    <img src="images/windmill_img.avif" alt="" class="windmill">
+                    <h2>Environmental Updates</h2>
+                    <button class="read-more" onclick="news()"style="cursor: pointer;">Read More</button>
+                </div>
+                <div class="box1">
+                    <img src="images/windmill_img.avif" alt="" class="windmill">
+                    <h2>Strategies for Waste Management</h2>
+                    <button class="read-more" onclick="waste()" style="cursor: pointer;">Read More</button>
+                </div>
+        </div>
+    </header>
+    <div id="Common" >
+        <div class="box" id="first" style="padding-left: 34px;">
+            <div id="heading">
+            <h2>EcoWise</h2>
+            <img src="images/logo.png" alt="">
+        </div>
+            <p>Thank you for your interest and our commitment to a sustainable future. We welcome your inquiries, feedback, and collaboration opportunities.</p>
+        </div>
+        <div class="box" id="second">
+            <div id="nav" style="padding-left: 64px;">
+            <h2 style="padding-left: 22px;">Company</h2>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/AboutUs">About Us</a></li>
+                <li><a href="/DailyUpdates">Updates</a></li>
+                <li><a href="/Events">Events</a></li>
+                <li><a href="/Ngo">NGO</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="box" id="third" >
+            <h2 style="padding-right: 245px">Contact Us</h2>
+            <form id="form" action="process_name.php" method="post">
+                
+                <input type="text" id="name" name="name" placeholder="Name" required>
+    
+                <input type="email" id="email" name="email" placeholder="Email" required style="margin-left: 10px;">
+        
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <div>
+                <textarea id="notes" name="notes" placeholder="Notes " rows="1" style="resize: none;"></textarea>
+                </div>
+                <button type="submit" style="background-color: green; cursor: pointer; color: white; padding: 6px 0;">Send Message</button>
+                
+            </form>
+        </div>      
+
+    </div>
+    
+    </div>
+    <script>
+        
+        document.getElementById("searchIcon").addEventListener("click", iconClickHandler);
+        let icon=document.getElementById("searchIcon")
+        let form = document.getElementById("searchForm");
+        function iconClickHandler() {
+            form.style.display="block";
+            icon.style.display="none";
+        
+    }
+    
+    function news() {
+      // Change the URL to the desired destination
+      window.location.href = "https://www.hindustantimes.com/environment";
+    }
+    function waste() {
+      // Change the URL to the desired destination
+      window.location.href = "https://www.conserve-energy-future.com/waste-management-and-waste-disposal-methods.php";
+    }
+    function carbon() {
+      // Change the URL to the desired destination
+      window.location.href = "https://www.nature.org/en-us/get-involved/how-to-help/carbon-footprint-calculator/#:~:text=A%20carbon%20footprint%20is%20the,is%20closer%20to%204%20tons.";
+    }
+    function sustainability() {
+      // Change the URL to the desired destination
+      window.location.href = " https://www.unep.org/explore-topics/resource-efficiency/what-we-do/sustainable-lifestyles";
+    }
+   
+  
+    </script>
+    <script src="javascript/InstantSearch.js"></script>
+</body>
+</html>
