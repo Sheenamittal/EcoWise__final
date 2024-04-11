@@ -2,6 +2,8 @@
 
 EcoWise is a web application that allows users to disseminate critical information related to environmental issues and champion innovative strategies for mitigating their impact. Users can also navigate event calenders.
 
+Link - https://eco-wise-final.vercel.app/
+
 ## Getting Started
 
 ### Prerequisites
