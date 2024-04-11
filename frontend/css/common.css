@@ -1,0 +1,42 @@
+#common{
+    color: white;
+
+    justify-content: space-around; /* Equal spacing between boxes */
+            align-items: center; /* Center content vertically */
+            height: 200vh; /* Full height of the viewport */
+            padding: 20px;
+}
+.box{ flex: 1; /* Each box takes equal space within the container */
+     /* Center content horizontally */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    }
+#option li {
+  list-style-type: none;
+  text-decoration: none  ;
+}
+#option li a{
+    color: white ;
+    text-decoration: none;
+}
+#form input{
+    background-color: #072D16;
+}
+input:focus, textarea:focus {
+    border-bottom: 2px solid #4CAF50; /* Change the line color on focus */
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

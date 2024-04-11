@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/instantSearch.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li style="justify-content: center;">
+                    <img style="height: 30px;" src="images/logo_new.png" alt="">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/AboutUs">About Us</a></li>
+                    <li><a href="/DailyUpdates">Updates</a></li>
+                    <li><a href="/Events">Events</a></li>
+                <li><img id="searchIcon" src="images/search_icon-removebg-preview.png" alt="search" class="icon"></li>
+                <li id="searchForm" style="display: none;">
+                    <form >
+                        <input type="text" id="searchInput" spellcheck="false" placeholder="What are you looking for" required onkeyup="content()" >
+                        <input type="button" id="searchButton" value="Search"  style="background-color: black; color: white;
+                        cursor: pointer;">
+                    </form>
+                    <div class="icon">
+                        <div class="result-container" >
+                            
+                                <ul id="myUL">
+                                    <li><a href="https://en.wikipedia.org/wiki/Sustainable_development">Sustainable Development</a></li>
+                                    <li><a href="https://www.energy.gov/eere/renewable-energy#:~:text=Renewable%20energy%20is%20energy%20produced,heating%20and%20cooling%2C%20and%20transportation.">Renewable Energy</a></li>
+                                    <li><a href="https://education.nationalgeographic.org/resource/fossil-fuels/">Fossil fuels</a></li>
+                                    <li><a href="https://education.nationalgeographic.org/resource/pollution/">Pollution</a></li>
+                                    <li><a href="https://www.pca.state.mn.us/news-and-stories/what-you-can-do-about-air-pollution">Various measures to reduce pollution</a></li>
+                                    <li><a href="https://www.worldwildlife.org/pages/what-is-biodiversity#:~:text=Biodiversity%20is%20all%20the%20different,maintain%20balance%20and%20support%20life.">Biodiversity</a></li>
+                                    <li><a href="https://education.nationalgeographic.org/resource/wildlife-conservation/">Wildlife conservation</a></li>
+                                    <li><a href="https://www.un.org/en/climatechange/what-is-climate-change">Climate Change</a></li>
+                                    <li><a href="https://education.nationalgeographic.org/resource/global-warming/">Global Warming</a></li>
+                                    <li><a href="https://www.energy.gov/eere/energy-efficiency-buildings-and-industry#:~:text=Energy%20efficiency%20is%20the%20use,less%20energy%20to%20produce%20goods.">Energy Efficiency</a></li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                        
+                        
+                </li>
+            </ul>
+        </div>
+    </header>
+        
+    <div id="content" style="margin-left: 135px;">
+        <img src="images/cr.png" alt=""  style="height: 600px; padding: 0 60px;">
+        <div id="text">
+            <div class="img-container">
+                <img id="moving-bird"src="images/bird gif.gif" alt="">
+            
+            <h1 class="heading" style="font-size: 3.5rem;">Nurturing <br>Nature's Wisdom</h1>
+        </div>
+            <p>EcoWise: Nurturing Nature's Wisdom
+                EcoWise is your gateway to a world where sustainability, conservation, 
+                and eco-conscious living unite. Our mission is to empower individuals with 
+                the wisdom and knowledge needed to make eco-friendly choices in their daily lives.
+                </p>
+            <div>
+               <a href="/chart"> <img id="stats" src="images/stats.png" alt="stats" ></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="aboutUs" style="background-image: url(images/home2_bg.jpg); background-size: cover ;">
+        <div class="ourOffer">
+            <h1>Our Offer To The World</h1>
+            <p>Welcome to EcoWise, your gateway to a greener,
+             cleaner, and more sustainable world. Our mission is to raise awareness
+            about pressing environmental issues and offer innovative solutions 
+            to address them. At EcoWise, we're committed to sharing
+            historical data and current news on critical concerns such as
+            air quality indices, waste management, and more. </p>
+        </div>
+        <div style="padding-top: 150px; padding-right: 90px; ">
+            <video  width="470" controls>
+            <source src="images/pexels_videos_2480792 (1080p).mp4" type="video/mp4"></video>
+        </div>
+    </div>
+    <div id="Common" >
+        <div class="box" id="first" style="padding-left: 40px;">
+            <div id="heading">
+            <h2>EcoWise</h2>
+            <img src="images/logo.png" alt="">
+        </div>
+            <p>Thank you for your interest and our commitment to a sustainable future. We welcome your inquiries, feedback, and collaboration opportunities.</p>
+        </div>
+        <div class="box" id="second">
+            <div id="nav" style="padding-left: 64px;">
+            <h2 style="padding-left: 22px;">Company</h2>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/AboutUs">About Us</a></li>
+                <li><a href="/DailyUpdates">Updates</a></li>
+                <li><a href="/Events">Events</a></li>
+                <li><a href="/Ngo">NGO</a></li>
+                
+            </ul>
+        </div>
+        </div>
+
+        <div class="box" id="third" >
+            <h2 style="padding-right: 245px">Contact Us</h2>
+            <form id="form" action="" method="post" onsubmit="submitForm()">
+                
+                <input type="text" id="name" name="name" placeholder="Name" required>
+    
+                <input type="email" id="email" name="email" placeholder="Email" required style="margin-left: 10px;">
+        
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <div>
+                <textarea id="notes" name="notes" placeholder="Notes " rows="1" style="resize: none;"></textarea>
+                </div>
+                <button type="submit" style="background-color: green; cursor: pointer; color: white;">Send Message</button>
+                
+            </form>
+        </div>      
+
+    </div>
+    <script>
+        function submitForm() {
+            alert("Your query has been recorded");
+        }
+    </script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        document.getElementById("searchIcon").addEventListener("click", iconClickHandler);
+        let icon=document.getElementById("searchIcon")
+        let form = document.getElementById("searchForm");
+        function iconClickHandler() {
+            form.style.display="block";
+            icon.style.display="none";
+        
+    }
+   
+        
+        let search_result_click=document.getElementById("searchInput");
+        let results=document.getElementById("result-container");
+        function showResult(){
+            results.style.display='block'
+        }
+
+    
+    
+    </script>
+    <script src="javascript/InstantSearch.js"></script>
+</body>
+
+</html>
